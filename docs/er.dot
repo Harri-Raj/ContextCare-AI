@@ -1,0 +1,11 @@
+digraph ER {
+ graph [rankdir=LR, bgcolor="white", pad="0.3", nodesep="0.38", ranksep="0.7"];
+ node [shape=box, style="rounded,filled", fillcolor="#EAF1FB", color="#5B79A4", fontname="Arial"];
+ edge [color="#6B7280", arrowsize=0.7];
+ users -> {auth_sessions conversations long_term_memory short_term_memory identity_vault user_preferences tasks audit_logs analytics_events};
+ conversations -> {messages dialogue_states};
+ messages -> conversation_entities;
+ long_term_memory -> memory_embeddings;
+ identity_vault -> pseudonym_mappings;
+ tasks -> reminders;
+}

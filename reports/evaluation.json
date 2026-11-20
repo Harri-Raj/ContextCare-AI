@@ -1,0 +1,16 @@
+{
+  "ner_sanity_examples": 4,
+  "ner_precision": 0.8571,
+  "ner_recall": 0.8571,
+  "ner_f1": 0.8571,
+  "scripted_coreference_success": 1,
+  "scripted_coreference_cases": 1,
+  "retrieval_recall_at_3": 1,
+  "retrieval_cases": 1,
+  "pii_leakage_test_rate": 0,
+  "pii_test_cases": 1,
+  "task_flow_success": 1,
+  "latency_p50_ms": 4.53,
+  "latency_p95_estimate_ms": 14.76,
+  "limitations": "Tiny scripted sanity sample, not real-world benchmarking. P95 is maximum of only three measurements."
+}
